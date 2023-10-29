@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/3649/3649823.png?ga=GA1.1.1822795416.1697523662&track=ais"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: url("https://img.freepik.com/free-photo/beautiful-cloudscape-sunset-evening-dawn_53876-14284.jpg?w=900&t=st=1698476162~exp=1698476762~hmac=f00cf8dcff6cde29c81b010e9cd38d5af65394503c06b5febf50bfe786c8a31b")
+          no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+      }
+      .main {
+        display: flex;
+      }
+      .form-main {
+        /* border: 1px solid rgb(255, 255, 255); */
+        width: 350px;
+        margin-left: 250px;
+        height: 500px;
+        margin-top: 50px;
+        box-shadow: 1px 2px 20px 8px rgba(0, 0, 0, 0.288);
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.19);
+        backdrop-filter: blur(14px);
+      }
+      .form-btn {
+        display: flex;
+        justify-content: space-around;
+      }
+      .form-btn-1 {
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        padding: 10px 20px;
+      }
+      .form-btn-1:hover {
+        cursor: pointer;
+        border-radius: 20px;
+        border: 1px solid green;
+        padding: 10px 20px;
+      }
+
+      .form-main-form {
+        margin: 20px;
+      }
+      input {
+        background-color: transparent;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        color: white !important;
+        border-bottom: 2px solid rgb(236, 236, 236);
+        outline: none;
+        /* padding: 10px 40px; */
+        padding-right: 100px;
+        margin-top: 40px;
+        padding-bottom: 5px;
+      }
+      .register {
+        color: white;
+        background-color: green;
+        border-radius: 30px;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .register:hover {
+        color: rgb(54, 193, 16);
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        border: 2px solid green;
+        padding: 10px 15px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; padding: 20px; font-family: sans-serif">
+      <i> FORM</i>
+    </h1>
+    <div
+      style="
+        background-color: rgb(203, 23, 23);
+        width: 100px;
+        height: 4px;
+        margin: 0 auto;
+      "
+    ></div>
+
+    <div class="main">
+      <div class="form-main">
+        <!-- Main -->
+        <div class="form-btn">
+          <!-- button -->
+          <button
+            class="form-btn-1"
+            style="border-bottom: 2px solid rgb(255, 17, 0)"
+          >
+            Sing Up
+          </button>
+          <button class="form-btn-1">Login</button>
+        </div>
+
+        <!-- form -->
+        <form action="" class="form-main-form">
+          <input
+            style="border-bottom: 2px solid rgb(9, 212, 53)"
+            type="text"
+            placeholder="Enter your Name"
+          />
+          <input type="email" placeholder="Enter your Email " />
+          <input type="number" placeholder="Enter your Phone No. " />
+          <input type="password" placeholder="Enter your Password " /> <br />
+
+          <div style="text-align: center">
+            <input type="checkbox" placeholder="Enter your Name " />
+            <span> I agree with term and condition </span><br />
+            <button class="register">REGISTER</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-main">
+        <!-- Main -->
+        <div class="form-btn">
+          <!-- button -->
+          <button class="form-btn-1">Sing Up</button>
+          <button
+            class="form-btn-1"
+            style="border-bottom: 2px solid rgb(255, 17, 0)"
+          >
+            Login
+          </button>
+        </div>
+
+        <!-- form -->
+        <form action="" class="form-main-form">
+          <input
+            style="border-bottom: 2px solid rgb(9, 212, 53)"
+            type="email"
+            placeholder="EMAIL ID"
+          />
+
+          <input type="password" placeholder="********* " value="***********" />
+          <br />
+
+          <div style="text-align: center">
+            <input type="checkbox" placeholder="Enter your Name " />
+            <span>keep me signed on this device </span><br />
+            <button class="register">REGISTER</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
